@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package projetjava;
-
+import view.*;
 /**
  *
  * @author Youssef
@@ -14,8 +14,9 @@ public class ProjetJava {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         // TODO code application logic here
+        Window fenetre = new Window();
     }
-    
 }
