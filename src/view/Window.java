@@ -63,6 +63,8 @@ public class Window extends JFrame implements ActionListener
         instruct.setBounds(new Rectangle(10,10,130,30));
         result = new JTextArea();
         result.setBounds(new Rectangle(50,70,200,200));
+        result.setText("write an URL,\nthen click \"go\" to display the graph");
+        result.append("\nwait until graph is updated\nto enter next URL");
         valider = new JButton("go");
         valider.setBounds(new Rectangle(130,50,60,20));
         valider.addActionListener(this);
@@ -88,7 +90,7 @@ public class Window extends JFrame implements ActionListener
             BufferedReader reader = new BufferedReader(new InputStreamReader(stream), 1);
             while((buffer = reader.readLine()) != null)
             {
-                buffer=reader.readLine();
+                //buffer=reader.readLine();
                 System.out.println(buffer);
                 if(buffer != null)
                 matcher = pattern.matcher(buffer);
